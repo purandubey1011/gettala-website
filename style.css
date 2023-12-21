@@ -1,0 +1,464 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    @font-face {
+        font-family: attila;
+        src: url(./attila.ttf);
+    }
+    @font-face {
+        font-family: dancing script;
+        src: url(./DancingScript-VariableFont_wght.ttf);
+    }
+
+    #main{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: #232025;
+        color: #dadada;
+    }
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #8f54a0 #ffffff00;
+      }
+    
+      /* Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+        width: 10px;
+      }
+    
+      *::-webkit-scrollbar-track {
+        background: #232025;
+        
+      }
+    
+      *::-webkit-scrollbar-thumb {
+        background-color: #504f4f;
+        border-radius: 10px;
+      }
+
+    /* navbar */
+
+    #nav{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        position: relative;
+    }
+    #nav-right{
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #nav>h2{
+        font-size: 21px;
+        text-transform: uppercase;
+        font-family: 'Mulish', sans-serif;
+        letter-spacing: 4px;
+    }
+    #nav-right>h2{
+        font-size: 21px;
+        text-transform: uppercase;
+        font-family: 'Mulish', sans-serif;
+        letter-spacing: 3px;
+    }
+    #nav-right>i{
+        font-size: 21px;
+        padding: 0 15px;
+    }
+
+    /* overlay */
+    #full-scr-overlay{
+        width: 100%;
+        height: 100%;
+        background: #dadada;
+        position: absolute;
+        top: -100%;
+        transition: all ease-in-out .5s ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #full-scr-overlay h1{
+    font-size: 150px;
+    font-family: 'Mulish', sans-serif;
+    color: #222;
+    }
+
+    /* page 1 */
+    #page1{
+        width: 100%;
+        height: 55vh;
+        position: relative;
+        /* background: #535353; */
+
+    }
+    #page1-text{
+        width: 100%;
+        min-height: 55vh;
+        position: relative;
+        /* background: rgb(206, 143, 143);  */
+    }
+    #page1-text>h1{
+        color: #dadada;
+        font-size: 12vw;
+        font-family: 'Mulish', sans-serif;
+        position: absolute;
+        top: 10%;
+        left:6%;
+        letter-spacing: 10px;
+    }
+    #page1-text>b{
+        font-size: 2vw;
+        font-family: 'Mulish', sans-serif;
+        line-height: 3.3vh;
+        position: absolute;
+        top: 56%;
+        left: 27%;
+        font-style: italic;
+        font-weight: 100;
+    }
+    #page1-text>div{
+        position: absolute;
+        top: 56%;
+        right: 25%;
+    }
+    #page1-text>div p{
+        font-size: 18px;
+        font-family: 'Kanit', sans-serif;
+        word-spacing: 3px;
+        line-height: 1vw;
+        text-transform: uppercase;
+    }
+
+    /* page 2 */
+    #page2{
+        width: 100%;
+        min-height: 100%;
+        background: #232025;
+        position: relative;
+    }
+    #page2 img{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        transform: scale(.85);
+    }
+    #page3{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #232025;
+    }
+    #page3 p{
+        font-size: 35px;
+        text-align: center;
+        /* font-family: 'Archivo Black', sans-serif; */
+        /* font-family: 'Londrina Solid', sans-serif; */
+        font-family: 'Shippori Antique B1', sans-serif;
+        line-height: 37px;
+        font-weight: 100;
+        letter-spacing: -2px;
+        word-spacing: 4px;
+        transform: rotateX(0deg);
+        transform-origin: left bottom;
+    }
+    #page3 p span{
+        font-family: 'Pacifico', cursive;
+        font-size:28px;
+    }
+
+    /* page 4 */
+    #page4{
+        width: 100%;
+        height: 100%;
+        /* background: slateblue; */
+        background:  #232025;
+    }
+    #page4-top-prt{
+        width: 100%;
+        height: 70%;       
+        /* background: goldenrod; */
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+    }
+    #page4-top-prt h1{
+        font-size: 8vw;
+        font-family: attila;
+        text-transform: uppercase;
+        line-height: 15vh;
+        margin-left: 5vw;
+    }
+    #page4-bottom-prt{
+        width: 100%;
+        height: 30%;       
+        border-top: 1px solid #adadad;
+        border-bottom: 1px solid #adadad;
+        display: flex;
+    }
+    #page4-bottom-l{
+        border-right: 1px solid #adadad;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #page4-bottom-l h1{
+        font-family: attila;
+        font-size: 3.5vw;
+        line-height: 6.4vh;
+    }
+    #page4-bottom-r{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #page4-bottom-r p{
+        font-size: 1.4vw;
+        line-height: 3.8vh;
+        font-family: attila;
+        
+    }
+    
+    /* page 5 */
+    #page5{
+        width: 100%;
+        height: 100%;
+        background-image: url(https://uploads-ssl.webflow.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif);
+        background-size: cover;
+        background-position: center;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #page5-center{
+        width: 55%;
+        height: 70%;
+        /* background: gray; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    #page5-center p{
+        font-family: attila;
+        width: 40%;
+        margin-top:2vw;
+    }
+    #page5-c-t{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #page5-c-t h2{
+     font-family: attila;   
+     font-size: 3.9vw;
+     line-height: 2vh;
+    }
+    #page5-c-t h3{
+       font-family: 'dancing script';
+       font-size: 4.9vw;
+    }
+
+
+    #page5 img{
+        height: 50px;
+        animation: rotateinfi 2s infinite linear;
+    }
+    
+    @keyframes rotateinfi {
+        0%{
+            rotate: 0deg;
+        }
+        100%{
+            rotate: 360deg;
+        }
+    }
+    
+    /* page6 */
+    #page6{
+        background:  #232025;
+    }
+    
+    .slide1-of-h1{
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .slide1-of-h1::-webkit-scrollbar{
+        display: none;
+    }
+    .slide2-of-h1::-webkit-scrollbar{
+        display: none;
+    }
+    .slide2-of-h1{
+        overflow-y: hidden;
+        overflow-x: auto;   
+    }
+    .slide2-of-h1 h1{
+       transform: translateX(-93%);   
+    }
+
+    #page6 h1{
+        font-size: 11vw;
+        line-height: 23vh;
+        text-transform: uppercase;
+    }
+
+    #page6 .one1{
+        color: transparent;
+        -webkit-text-stroke: 1px #adadad;
+    }
+
+    /* page 7 */
+    #page7{
+        width: 100%;
+        height: 100%;
+        background:  #232025;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #page7top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 15vh 0;
+    }
+    #page7top h1{
+        font-size: 3vw;
+        font-family: attila;
+        line-height: 4vh;
+    }
+    #page7top p{
+        font-size: 4vw;
+        font-family: "dancing script";
+    }
+    #page7bottom{
+        /* background: #343434; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+    }
+    #yes,#no{
+        width: 400px;
+        height: 150px;
+        /* background: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: attila;
+        font-size: 3vw;
+        position: relative;
+        z-index: 9;
+    }
+
+    #imgyes,#imgno{
+        width: 250px;
+        height: 250px;
+        background: gray;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -9;
+        opacity: 0;
+        transition: all .6s linear;
+        transform: rotate(9deg);
+    }
+    #imgyes img{
+        width: 100%;
+        height: 100%;
+    }
+    #imgno img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* page 8 */
+   #page8{
+    height: 100vh;
+    background-color: #232025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+   }
+   #page8 h1{
+    position: absolute;
+    top: 15vh;
+    font-size: 4.5vw;
+    font-family: attila;
+   }
+   #product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   #page8 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+   }
+   .products{
+    height: 40vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    top: 35vh;
+    position: absolute;
+    box-shadow: 0px 0px 15px #232025;
+   }
+   .products:hover{
+    transform: rotate(13deg) scale(1.1);
+    }
+
+    #product3{
+        height: 50vh;
+        z-index: 11;
+    }
+    #product2{
+        height: 43vh;
+        left: 30vw;
+        top: 38vh;
+        z-index: 10;
+    }
+    #product4{
+        height: 43vh;
+        right: 30vw;
+        top: 38vh;
+        z-index: 10;
+    }
+    #product1{
+        left: 20vw;
+        top: 41vh;
+        height: 37vh;
+    }
+    #product5{
+        right: 20vw;
+        top: 41vh;
+        height: 37vh;
+    }
